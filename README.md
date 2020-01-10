@@ -25,6 +25,9 @@ Visit our [website] for audio samples using our published [Tacotron 2] and
 5. Update .wav paths: `sed -i -- 's,DUMMY,ljs_dataset_folder/wavs,g' filelists/*.txt`
     - Alternatively, set `load_mel_from_disk=True` in `hparams.py` and update mel-spectrogram paths 
 6. Install [PyTorch 1.0]
+    ```
+    conda install pytorch==1.0.0 torchvision==0.2.1 cuda100 -c pytorch
+    ```
 7. Install [Apex]
 8. Install python requirements or build docker image 
     - Install python requirements: `pip install -r requirements.txt`
